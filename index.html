@@ -23,7 +23,45 @@
       href="./favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="./favicon//site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- Primary Meta Tags -->
     <title>Home | DOM Projects</title>
+    <meta name="title" content="Home | DOM Projects" />
+    <meta
+      name="description"
+      content="Explore a collection of interactive JavaScript DOM (Document Object Model) projects showcasing dynamic web development. Dive into hands-on examples, live demos, and discover the power of DOM manipulation. Elevate your web development skills with practical exercises and real-world applications."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.jisan.io/dom-projects/" />
+    <meta property="og:title" content="Home | DOM Projects" />
+    <meta
+      property="og:description"
+      content="Explore a collection of interactive JavaScript DOM (Document Object Model) projects showcasing dynamic web development. Dive into hands-on examples, live demos, and discover the power of DOM manipulation. Elevate your web development skills with practical exercises and real-world applications."
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/Jisan-mia/dom-projects/assets/61211600/40429ec8-6cfb-4c2c-af8e-23d27d285f50"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.jisan.io/dom-projects/" />
+    <meta property="twitter:title" content="Home | DOM Projects" />
+    <meta
+      property="twitter:description"
+      content="Explore a collection of interactive JavaScript DOM (Document Object Model) projects showcasing dynamic web development. Dive into hands-on examples, live demos, and discover the power of DOM manipulation. Elevate your web development skills with practical exercises and real-world applications."
+    />
+    <meta
+      property="twitter:image"
+      content="https://github.com/Jisan-mia/dom-projects/assets/61211600/40429ec8-6cfb-4c2c-af8e-23d27d285f50"
+    />
   </head>
   <body>
     <header id="#">
@@ -36,12 +74,12 @@
             <strong>DOM Projects</strong>
           </a>
           <div class="nav-list">
-            <div class="nav-item project-nav-link">
-              <a href="#projects">Projects</a>
+            <div class="nav-item">
+              <a href="#projects" class="btn project-nav-link">Projects</a>
             </div>
             <div class="nav-item">
               <a
-                class="github-link"
+                class="btn github-link"
                 target="_blank"
                 href="https://github.com/Jisan-mia/dom-projects"
               >
@@ -74,20 +112,24 @@
 
       <section class="hero">
         <div class="hero-left">
-          <h2>JavaScript Projects</h2>
+          <h2>JavaScript DOM Projects</h2>
           <p>
-            Projects are the most practical way to learn any language, and
-            JavaScript is no exception. Solidify your knowledge of Javascript by
-            creating these cool projects.
+            Dom Projects is an open-source platform that helps you learn
+            frontend development faster with a hands-on practice style. It is a
+            collection of projects that you can use to learn HTML, CSS and
+            JavaScript
           </p>
 
-          <div>
+          <div class="hero-btns">
             <a href="#projects">
-              <button>Explore Projects</button>
+              <button class="btn">Explore Projects</button>
             </a>
 
-            <a target="_blank" href="https://github.com/Jisan-mia/learn-dom">
-              <button>Learn DOM</button>
+            <a
+              target="_blank"
+              href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+            >
+              <button class="btn active">Learn DOM</button>
             </a>
           </div>
         </div>
@@ -101,11 +143,17 @@
 
     <section id="projects">
       <div class="projects-title">
-        <h2>DOM Projects</h2>
+        <h2>Projects List</h2>
       </div>
       <div class="project-list-area"></div>
     </section>
 
-    <script type="module" src="./app.js"></script>
+    <footer>
+      <span>
+        Made with <i class="fa fa-heart pulse"></i> by
+        <a href="https://www.jisan.io/" target="_blank">Jisan Mia</a>
+      </span>
+    </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
